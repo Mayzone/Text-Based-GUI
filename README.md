@@ -16,7 +16,7 @@ local NewSystemMenu = loadstring(io.open(path , "rb"):read("*all"), path)`
 
 Example on how to open the menu after initialize:
 
-`local panel = {
+```local panel = {
     panel_data = {
         title = "Test Menu",
         main_color = {0.3, 0, 0, 0},
@@ -45,7 +45,7 @@ Example on how to open the menu after initialize:
     }
 }
 
-local instance, instances = NewSystemMenu:create_menu(panel, "menu id")`
+local instance, instances = NewSystemMenu:create_menu(panel, "menu id")```
 
 
 All button arguments are optional and customizable. Screenshot uses this layout.
