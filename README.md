@@ -5,6 +5,7 @@ An orgenized simple GUI for various reasons, menu can search from all sub conten
 
 
 ## Example on how to initialize the file:
+
 ```
 dofile("mods/mod name/NewSystemMenu.luac")
 ```
@@ -18,6 +19,7 @@ local NewSystemMenu = loadstring(io.open(path , "rb"):read("*all"), path)
 
 
 ## Example on how to open the menu after initialize:
+
 ```
 local panel = {
     panel_data = {
@@ -53,6 +55,7 @@ local instance, instances = NewSystemMenu:create_menu(panel, "menu id")
 
 
 ## All button arguments are optional and customizable. Screenshot uses this layout. Hide button in either a menu or game state since some functions should only work in a spesific state.
+
 ```
 hide_in = "menu"
 hide_in = "game"
@@ -78,4 +81,9 @@ instance:create_menu(panel, menu_id) -- creates the menu and opens it
 ```
 
 
-### Callback and focus_callback are same as default dialog menu, they both return values, states of the buttons or indexes.
+## Callback and focus_callback are same as default dialog menu, they both return values, states of the buttons or indexes.
+
+```
+focus_callback = function(index) end
+callback = function(value) end
+```
