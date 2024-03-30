@@ -52,8 +52,7 @@ local instance, instances = NewSystemMenu:create_menu(panel, "menu id")
 ```
 
 
-## All button arguments are optional and customizable. Screenshot uses this layout.
-## Hide button in either a menu or game state since some functions should only work in a spesific state.
+## All button arguments are optional and customizable. Screenshot uses this layout. Hide button in either a menu or game state since some functions should only work in a spesific state.
 ```
 hide_in = "menu"
 hide_in = "game"
