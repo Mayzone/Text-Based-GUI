@@ -1,14 +1,16 @@
-# Text-Based-GUI
-Creates a menu in payday 2
+# Text-Based-GUI - Creates a menu in payday 2
 
 
 An orgenized simple GUI for various reasons, menu can search from all sub contents, panel is draggable, allows a sliders, toggle buttons and changing panel colors. It doesn't depend on any mods to work. Menu is fixed size to 1280x720 in all resolutions to minimize testing and bugs. Semi support arrow keys to navigate menu, use mouse wheel to change sliders and esc key for quick exit menu. Main button panels and sub panels are scrollable with mouse wheel.
 
 
 ## Example on how to initialize the file:
-```dofile("mods/mod name/NewSystemMenu.luac")```
+```
+dofile("mods/mod name/NewSystemMenu.luac")
+```
 
 or
+
 ```
 local path = "mods/mod name/NewSystemMenu.luac"
 local NewSystemMenu = loadstring(io.open(path , "rb"):read("*all"), path)
@@ -64,8 +66,6 @@ hide_in = "game"
 main_color = {0.3, 0, 0, 0}
 ```
 
-## Callback and focus_callback are same as default dialog menu, they both return values, states of the buttons or indexes.
-
 
 ## Useful functions to call:
 
@@ -77,3 +77,6 @@ instance:enable_menu() -- opens the menu
 instance:enabled() -- returns true or false
 instance:create_menu(panel, menu_id) -- creates the menu and opens it
 ```
+
+
+### Callback and focus_callback are same as default dialog menu, they both return values, states of the buttons or indexes.
